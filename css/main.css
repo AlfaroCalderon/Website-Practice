@@ -19,10 +19,13 @@
     border-radius: 5px;
 }
 
+.item a{
+    text-decoration: none;
+    color: black;
+}
+
 .item:hover{
     background-color: lightblue;
-    color: black;
-    cursor: pointer;
 }
 
 @media screen and (max-width: 768px) {
