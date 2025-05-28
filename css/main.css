@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: Arial, sans-serif;
+    background-color: #eaeafb;
+}
+
 .navbar{
     display: flex;
     justify-content: flex-start;
@@ -23,6 +28,46 @@
     color: black;
 }
 
+.card-gallery{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    max-width: 60vw;
+    margin: 20px auto;
+}
+
+.card1{
+padding: 1rem;
+border-radius: 5px;
+background-color: white;
+text-align:center
+}
+
+
+.card1 h2{
+    font-size: 1.5rem;
+    margin: 1rem 2rem;
+}
+
+.card1 p{
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.card-button{
+padding: 5px 20px;
+background-color: #84b6f4;
+border: 1px solid #ccc;
+border-radius: 3px;
+}
+
+.perfil{
+    width: 40%;
+    height: auto;
+    border-radius: 50%;
+}
+
 @media screen and (max-width: 768px) {
     .navbar{
         flex-direction: column;
@@ -33,4 +78,7 @@
         text-align: center;
     }
     
+    .card-gallery{
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
